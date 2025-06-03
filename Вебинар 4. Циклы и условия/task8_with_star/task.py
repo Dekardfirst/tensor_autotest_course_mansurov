@@ -19,5 +19,3 @@ def max_division_by_3(num):
                     if len(new_num_str) == len(str(num)):
                         return  int(new_num_str)
     return num
-
-max_division_by_3(num=999)
