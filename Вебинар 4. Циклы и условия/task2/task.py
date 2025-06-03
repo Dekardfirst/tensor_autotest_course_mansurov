@@ -4,4 +4,9 @@ def flatten_and_sort(array):
     :return: плоский список
     """
     # todo Здесь нужно написать код
-    return
+    flattened_list = []
+    for sublist in array:
+        flattened_list.extend(sublist)
+
+    flattened_list.sort()
+    return flattened_list

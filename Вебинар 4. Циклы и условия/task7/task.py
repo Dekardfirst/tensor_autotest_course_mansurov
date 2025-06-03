@@ -4,4 +4,6 @@ def move_zeros(lst):
     :return: список из цифр с нулями в конце
     """
     # todo Здесь нужно написать код
-    return lst
+    non_zeros = [x for x in lst if x != 0]
+    zeros = [x for x in lst if x == 0]
+    return non_zeros + zeros

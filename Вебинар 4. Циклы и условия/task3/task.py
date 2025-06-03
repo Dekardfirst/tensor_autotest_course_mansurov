@@ -4,5 +4,8 @@ def sum_digits(num):
     :return: сумма цифр числа
     """
     # todo Здесь нужно написать код
-    return
+    summa = 0
+    for digit in str(num):
+        summa += int(digit)
+    return summa
 

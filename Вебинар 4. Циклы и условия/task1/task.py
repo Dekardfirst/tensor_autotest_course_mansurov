@@ -6,5 +6,19 @@ def which_triangle(a, b, c):
     :return: тип треугольника
     """
     # todo Здесь нужно написать код
-    return
+
+    # Не треугольник
+    if a + b <= c or a + c <= b or b + c <= a:
+        return 'Не треугольник'
+
+    # Равносторонний
+    if a == b == c:
+        return 'Равносторонний'
+
+    # Равнобедренный
+    if a == b or a == c or b == c:
+        return 'Равнобедренный'
+
+    # Обычный
+    return 'Обычный'
 
