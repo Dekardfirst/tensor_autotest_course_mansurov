@@ -4,5 +4,6 @@ def letter_stat(our_str):
     :return: словарь со статистикой по буквам
     """
     # todo Здесь нужно написать код
-    return
+    letters_dict = {letter: our_str.count(letter) for letter in set(our_str)}
+    return letters_dict
 
