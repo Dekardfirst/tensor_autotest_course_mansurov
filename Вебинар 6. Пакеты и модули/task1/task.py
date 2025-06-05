@@ -7,4 +7,9 @@ def global_changes():
     :return: number, string
     """
     # todo Здесь нужно написать код
+    global number
+    global string
+
+    number = 5
+    string = 'Hello, dear friend'
     return number, string

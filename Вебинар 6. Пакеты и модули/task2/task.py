@@ -7,5 +7,7 @@ def global_function():
     def local_function():
         pass
         # todo Здесь нужно написать код
-
+        nonlocal msg
+        msg = 2
+    local_function()
     return msg
