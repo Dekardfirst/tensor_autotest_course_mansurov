@@ -1,7 +1,20 @@
 def memorize(function):
-    # todo Здесь нужно написать код
-    pass
-
+    """
+    Декоратор для кэширования результатов функции
+    """
+    cache = {}
+    def wrapper(*args):
+        """
+        Оборачивающая функция
+        """
+        args_tuple = args
+        if args_tuple in cache:
+            return function(*args), cache
+        else:
+            result = function(*args)
+            cache[args_tuple] = result
+            return result, cache
+    return wrapper
 
 # todo Здесь ничего изменять не нужно!
 @memorize
